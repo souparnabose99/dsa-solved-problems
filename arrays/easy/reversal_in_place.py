@@ -23,3 +23,5 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8]
 print("Nums before reversal : ", nums)
 num_reversed = rev_array(nums)
 print("Nums after reversal : ", num_reversed)
+
+
