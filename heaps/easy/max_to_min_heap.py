@@ -15,7 +15,7 @@ class HeapTransformer:
         index_left = 2 * index + 1
         index_right = 2 * index + 2
 
-        # In max heap, the parent is always greater than the children
+        # In min heap, the parent is always smaller than the children
         index_smallest = index
 
         # Search for the min (parent or left node)
@@ -26,7 +26,7 @@ class HeapTransformer:
         if index_right < len(self.heap) and self.heap[index_right] < self.heap[index_smallest]:
             index_smallest = index_right
 
-        # if the parent is larger than the children: it is a valid heap. Terminate the recursive function calls
+        # if the parent is smaller than the children: it is a valid heap. Terminate the recursive function calls
         if index != index_smallest:
             self.heap[index], self.heap[index_smallest] = self.heap[index_smallest], self.heap[index]
             self.fix_down(index_smallest)
