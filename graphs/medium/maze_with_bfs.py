@@ -1,3 +1,9 @@
+"""
+@TODO: 
+Find a way out of a maze with the help of Breadth First Search
+In an N X N array, 0 denotes walls or obstacles & 1 denotes valid path
+"""
+
 from collections import deque
 
 
