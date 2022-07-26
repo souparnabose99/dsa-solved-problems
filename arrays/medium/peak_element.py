@@ -22,3 +22,7 @@ def peakElement(self,arr, n):
   return peak_element
 
 
+# [3,4]
+# [1,2,3]
+
+
