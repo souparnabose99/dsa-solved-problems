@@ -29,5 +29,9 @@ if __name__ == "__main__":
     max_v, min_v = max_min_in_arr(arr_1)
     print("Max is : ", max_v)
     print("Min is : ", min_v)
+    print("----Second method call----")
+    max_v, min_v = max_min_in_arr_2(arr_1)
+    print("Max is : ", max_v)
+    print("Min is : ", min_v)
 
 
