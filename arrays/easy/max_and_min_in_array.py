@@ -21,6 +21,8 @@ def max_min_in_arr(arr):
 
     return max_val, min_val
 
+def max_min_in_arr_2(arr):
+    return max(arr), min(arr)
 
 if __name__ == "__main__":
     arr_1 = [3, 2, 1, 56, 10000, 167, 67, 28058, 34, -1]
