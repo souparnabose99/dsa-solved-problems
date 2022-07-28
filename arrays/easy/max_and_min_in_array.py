@@ -36,3 +36,8 @@ if __name__ == "__main__":
     print("Max is : ", max_v)
     print("Min is : ", min_v)
 
+# Max is :  28058
+# Min is :  -1
+# ----Second method call----
+# Max is :  28058
+# Min is :  -1
