@@ -8,3 +8,6 @@ In case of multiple sub-arrays, return the subarray which comes first on moving 
 For example : A = [1,2,3,4,5,6,7,8,9,10] , N = 10, S = 15
 Output: A[:5]
 """
+
+
+
