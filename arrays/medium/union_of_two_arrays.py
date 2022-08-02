@@ -34,5 +34,6 @@ if __name__ == "__main__":
     count = union_of_2_arrays(arr_1, arr_2)
     print("Count of elements after union : ", count)
 
+    # Count of elements after union :  9
 
 
