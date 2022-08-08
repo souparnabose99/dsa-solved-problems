@@ -45,5 +45,4 @@ if __name__ == "__main__":
     arr_3 = [3, 4, 15, 20, 30, 70, 80, 120]
     find_common_elements(arr_1, arr_2, arr_3)
 
-
-
+    # Common elements :  [20, 80]
