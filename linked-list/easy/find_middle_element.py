@@ -49,6 +49,22 @@ class LinkedList:
         print("Size of Linked List ->", self.no_of_nodes)
         return self.no_of_nodes
 
+    # Using 2 pointer method
+    def get_middle_element(self):
+        slow_pointer = self.head
+        fast_pointer = self.head
+
+        if fast_pointer is None:
+            print("Linked List is empty")
+            return
+
+        while fast_pointer.next_node is not None and fast_pointer.next_node.next_node is not None:
+            fast_pointer = fast_pointer.next_node.next_node
+            slow_pointer = slow_pointer.next_node
+
+        print("Middle element is ->", slow_pointer.data)
+        return slow_pointer
+
 
 if __name__ == "__main__":
     ll = LinkedList()
@@ -69,4 +85,9 @@ if __name__ == "__main__":
     ll.insert_element(5)
     ll.get_size_of_ll()
     ll.print_elements()
+
+    ll.get_middle_element()
+    
+    # Middle element is -> 3
+
 
