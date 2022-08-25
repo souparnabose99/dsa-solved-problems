@@ -33,5 +33,6 @@ if __name__ == "__main__":
     find_sub_array(arr1, 15)
     find_sub_array(arr2, 12)
 
-    #
+    # Sub array is :  [1, 2, 3, 4, 5]
+    # Sub array is :  [2, 3, 7]
 
