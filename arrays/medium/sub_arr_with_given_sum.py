@@ -27,5 +27,11 @@ def find_sub_array(arr, val):
         index_tracker += 1
 
 
-   
+if __name__ == "__main__":
+    arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    arr2 = [1, 2, 3, 7, 12]
+    find_sub_array(arr1, 15)
+    find_sub_array(arr2, 12)
+
+    #
 
