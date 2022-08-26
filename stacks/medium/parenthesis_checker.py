@@ -7,12 +7,13 @@ Input : {[]{()}}, Output : Balanced
 Input : [{}{}(], Output : Unbalanced
 """
 
-
+# O(N) runtime complexity 
 def parenthesis_checker(exp_str):
     open_braces = ["{", "(", "["]
     closing_braces = ["}", ")", "]"]
 
-    exp_str = exp_str.split()
+    exp_str = list(exp_str)
+    # print(exp_str)
     stack = []
     for ele in exp_str:
         if ele in open_braces:
@@ -21,8 +22,8 @@ def parenthesis_checker(exp_str):
             exp_ind = closing_braces.index(ele)
             if len(stack) > 0 and open_braces[exp_ind] == stack[len(stack) - 1]:
                 stack.pop()
-            else:
-                print("Unbalanced")
+            # else:
+                # print("Unbalanced")
 
     if len(stack) == 0:
         print("Balanced")
@@ -34,5 +35,12 @@ def parenthesis_checker(exp_str):
 
 if __name__ == "__main__":
     parenthesis_checker("{([])}")
+    parenthesis_checker("{([]])}[")
     parenthesis_checker("{(}}}}")
+    parenthesis_checker("{()}[]")
+    
+    # Balanced
+    # Unbalanced
+    # Unbalanced
+    # Balanced
 
