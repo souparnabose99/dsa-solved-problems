@@ -179,3 +179,5 @@ bst_2.insert(101)
 
 tree_comparator = BSTComparator()
 print(tree_comparator.compare_bst(bst_1.root, bst_2.root))
+
+
